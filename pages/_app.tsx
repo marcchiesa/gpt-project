@@ -4,16 +4,14 @@ import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-gray-50 min-h-screen">
       <Head>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <Component {...pageProps} />
-    </>
+    </div>
   )
 }
 
-
-// Removed incorrect '../styles/tailwind.css' import.
-// Tailwind styles are already included via globals.css if configured in tailwind.config.js.
-// This ensures Next.js finds the styles during build and applies them properly.
+// Added a background color and min-height to ensure styling looks consistent.
+// This will help differentiate content visually and confirm Tailwind CSS is applying styles.
