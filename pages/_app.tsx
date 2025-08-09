@@ -12,3 +12,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+
+// Removed incorrect '../styles/tailwind.css' import.
+// Tailwind styles are already included via globals.css if configured in tailwind.config.js.
+// This ensures Next.js finds the styles during build and applies them properly.
